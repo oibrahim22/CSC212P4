@@ -48,22 +48,6 @@ Remember that P4 will be due ***Due Date***: February 21, 2018.
 
 Remember that we will have P4 opening on that day, so don't save it until the last minute!
 
-## Reflection (=20)
-
-As we will discuss in class, we will now be writing reflections for our programming assignments. This can be done in any software you like, provided you upload a PDF to moodle in addition to the zip file for the code.
-
-Your reflection should identify any partners you worked with in Lab
-
-I expect you to take notes as you do the assignment and turn in at least 10 bullet points for this reflection. They can be distributed across the two following categories as you wish.
-
-### Lessons Learned
-
-List things you learned or became more comfortable with with respect to data structures and Java. You may learn from the assignment directly, or perhaps from a particular Piazza post (even if it wasn't your question!)
-
-### Challenges Remaining
-
-List things that still challenge your understanding of data structures and Java.
-
 ### Rubric and Reflection (=15)
 
 You must include a PDF file in your submission that identifies the grade you expect on this assignment based on what you completed. 
