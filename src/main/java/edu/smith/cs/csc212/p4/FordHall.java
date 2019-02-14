@@ -3,13 +3,8 @@ package edu.smith.cs.csc212.p4;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * SpookyMansion, the game.
- * @author jfoley
- *
- */
-public class SpookyMansion implements GameWorld {
-	private Map<String, Place> places = new HashMap<>();
+public class FordHall implements GameWorld  {
+private Map<String, Place> places = new HashMap<>();
 	
 	/**
 	 * Where should the player start?
@@ -22,16 +17,17 @@ public class SpookyMansion implements GameWorld {
 	/**
 	 * This constructor builds our SpookyMansion game.
 	 */
-	public SpookyMansion() {
+	public FordHall() {
 		Place entranceHall = insert(
 				Place.create("entranceHall", "You are in the grand entrance hall of a large building.\n"
 						+ "The front door is locked. How did you get here?"));
-		entranceHall.addExit(new Exit("basement", "There are stairs leading down."));
-		entranceHall.addExit(new Exit("attic", "There are stairs leading up."));
-		entranceHall.addExit(new Exit("kitchen", "There is a red door."));
+		entranceHall.addExit(new Exit("biolab", "There are stairs leading down."));
+		entranceHall.addExit(new Exit("hallway", "There are stairs leading up."));
+		entranceHall.addExit(new Exit("Engeeringlab", "There is a door to your right."));
+		entranceHall.addExit(new Exit("chem", "There is a door to your left."));
 		
-		Place basement = insert(
-				Place.create("basement", "You have found the basement of the mansion.\n" + 
+		Place biolab = insert(
+				Place.create("biolab", "You have found the biolab in the basement of FordHall  of the mansion.\n" + 
 		                           "It is darker down here.\n" +
 						"You get the sense a secret is nearby, but you only see the stairs you came from."
 						));
@@ -133,4 +129,6 @@ public class SpookyMansion implements GameWorld {
 	public Place getPlace(String id) {
 		return this.places.get(id);		
 	}
+}
+
 }

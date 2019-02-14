@@ -18,7 +18,13 @@ public class InteractiveFiction {
 		TextInput input = TextInput.fromArgs(args);
 
 		// This is the game we're playing.
-		GameWorld game = new SpookyMansion();
+		int playgame = 2;
+		if (playgame == 1) {
+			GameWorld game = new SpookyMansion();
+		}
+		else {
+			GameWorld game = new FordHall();
+		}
 		
 		// This is the current location of the player (initialize as start).
 		// Maybe we'll expand this to a Player object.
@@ -57,7 +63,7 @@ public class InteractiveFiction {
 			// Get the word they typed as lowercase, and no spaces.
 			String action = words.get(0).toLowerCase().trim();
 			
-			if (action.equals("quit")) {
+			if (action.equals("q") || action.equals("escape") || action.equals("quit")) {
 				if (input.confirm("Are you sure you want to quit?")) {
 					break;
 				} else {
